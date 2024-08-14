@@ -143,4 +143,4 @@ document.addEventListener("DOMContentLoaded", function() {
       box13 && box13.classList.remove("question-13-animation-active");
     };
   }
-});
+})
