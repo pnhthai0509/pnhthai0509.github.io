@@ -1,0 +1,141 @@
+:root {
+  background-color: #FFA441;
+  font-family: "Cormorant Garamond", serif;
+}
+
+body {
+margin: 0;
+padding: 0;
+}
+
+.heading-wrapper {
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+}
+
+.heading-container {
+  padding-left: 5rem;
+  padding-right: 5rem;
+  margin: 0;
+  width: auto;
+  height: 100vh;
+}
+
+.heading-container-1 {
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.heading-container-1 > p {
+  font-size: 2rem;
+}
+
+.heading-container-titles {
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 9rem;
+  font-weight: bold;
+}
+
+
+.question-1-animation,
+.question-2-animation,
+.question-3-animation,
+.question-4-animation,
+.question-5-animation,
+.question-6-animation,
+.question-7-animation,
+.question-8-animation,
+.question-9-animation,
+.question-10-animation,
+.question-11-animation,
+.question-12-animation,
+.question-13-animation {
+  width: 0rem;
+  height: 100vh;
+  padding: 5rem;
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 100;
+  background-color: black;
+  color: white;
+  position: fixed;
+  transition: 500ms ease;
+  opacity: 0;
+  left:-500px;
+}
+.question-1-animation-active,
+.question-2-animation-active,
+.question-3-animation-active,
+.question-4-animation-active,
+.question-5-animation-active,
+.question-6-animation-active,
+.question-7-animation-active,
+.question-8-animation-active,
+.question-9-animation-active,
+.question-10-animation-active,
+.question-11-animation-active,
+.question-12-animation-active,
+.question-13-animation-active {
+  width: 50rem;
+  opacity: 1;
+  left:0;
+}
+
+.close-btn {
+  background-color: black ;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  font-weight: 100;
+  cursor: pointer;
+  display: flex;
+}
+
+.question-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.1em;
+  margin: 5rem;
+}
+.question-wrapper > * {
+  flex: 1 1 10%;
+}
+
+.reveal {
+  display: flex;
+  flex-direction: column-reverse;
+  height: 40vh;
+  color: black;
+  font-family: 'Cormorant Garamond';
+  text-align:left;
+  border: .1em solid black;
+  font-size: 1em;
+  background-color: #FFA441;
+  transition: 500ms ease;
+}
+
+.reveal:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.reveal > h3 {
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.reveal > * {
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
+}
+
