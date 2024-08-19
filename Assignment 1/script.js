@@ -25,7 +25,6 @@ const box11 = document.querySelector(".question-11-animation");
 const box12 = document.querySelector(".question-12-animation");
 const box13 = document.querySelector(".question-13-animation");
 
-
 revealbtn1.onclick = function() {
   box1.classList.toggle("question-1-animation-active");
 };
