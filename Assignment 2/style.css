@@ -1,37 +1,24 @@
-* {
-    box-sizing: border-box;
+:root {
+  /* background-color: black; */
 }
 
 body {
-    height: 100vh;
-    margin: 0;
-    font-family: sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-self: center;
-    background-color: aliceblue;
+  margin: 0;
+  padding: 0;
 }
-
-.track-container {
-    width: 30vw;
-    height: 90vh;
-    background-color: aquamarine;
-    position: relative;
-}
-
-.track-title {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.track-img {
-    width: 512px;
-    height: 512px;
-    margin: 30px;
-    border-radius: 24px;
+#container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+  background-image: url("/bg-img.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 .track-name {
@@ -72,16 +59,11 @@ body {
     margin: 0;
 }
 
-.action-btn:hover {
-    color: black;
-}
-.progress {
-    width: 100%;
-    height: 10px;
-    background-color: black;
-    overflow: hidden;
-}
-
-.progress-container {
-    overflow: hidden;
+.progress-bar {
+  width: 100%;
+  height: 10px;
+  background-color: black;
+  /* margin-top: 10px; */
+  overflow: hidden;
+  border-radius: 30px; 
 }
