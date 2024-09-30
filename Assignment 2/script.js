@@ -1,28 +1,39 @@
-let track1 = new Audio();
-track1.src = '/Assignment 2/Audio/p-hase_Dry-Down-feat-Ben-Snaath.mp3';
+const trackContainer = document.querySelector('.track-container');
+const playBtn = document.querySelector('#play');
+const prevBtn = document.querySelector('#prev');
+const nextBtn = document.querySelector('#next');
+const audio = document.querySelector('#audio');
+const progress = document.querySelector('.progress');
+const progressContainer = document.querySelector('.progress-contaner');
+const title = document.querySelector('.track-name');
+const cover = document.querySelector('.track-img');
 
-const playPauseButton = document.querySelector("#play-pause-btn");
-const playPauseImg = document.querySelector("#play-pause-img");
+const songs = [
+    'Dry Down feat Ben Snaath',
+    "He's",
+    'Leapt',
+    'Water Feature'
+];
 
-function toggle(){
-    if (track1.paused || track1.ended){
-        track1.play();
-        playPauseImg.src = "https://img.icons8.com/ios-glyphs/30/pause--v1.png";
-        console.log('The music is now playing!');
-    }else {
-        track1.pause();
-        playPauseImg.src = "https://img.icons8.com/ios-glyphs/30/play--v1.png";
-        console.log('The music is stopped!');
-    }
+let songIndex = 1;
+
+//This is where the website will load the song and then update the song detail
+
+loadSong(songs[songIndex]);
+
+function loadSong(song) {
+    title.innerText = song //This will load the title of the song based on 
+    audio.src = `Assignment 2/Audio/${song}.mp3`
+    // cover.src = `images/${song}.jpg`
 }
 
-playPauseButton.addEventListener("click", function(event){
-    event.stopPropagation();
-    toggle();
-});
-//Play button section
-const outside = document.querySelector("#container");
-outside.addEventListener('click', function(){
-    toggle();
-});
-//Click anywhere to play music section
+//Play pause button
+playBtn.addEventListener('click', togglePlay);
+
+function togglePlay() {
+    if (audio.paused || audio.ended) {
+        audio.play()
+    } else {
+        audio.pause()
+    }
+}
