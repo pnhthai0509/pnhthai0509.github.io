@@ -48,12 +48,9 @@ let videoTitle = document.querySelectorAll("#track-title");
 
 const videoList = [
   { name: "Dry Down feat Ben Snaath", link: "https://dl.dropboxusercontent.com/scl/fi/oher31x82x8ap39m80d4n/Dry_Down_feat_Ben_Snaath.mp4?rlkey=4rypbiglt0i759ci49lyeu9k0&st=6ea6ax1l&dl=0" },
-  { name: "He's",
-    link: "https://dl.dropboxusercontent.com/scl/fi/ufpmfy4llvvtj5nkrkyft/He-s.mp4?rlkey=32uy47gtd9yygy2v89viw9509&st=jsbkzopx&dl=0"},
-  { name: "Leapt",
-    link: "https://dl.dropboxusercontent.com/scl/fi/8b19jwtzl0z8vv3u06hw2/Leapt.mp4?rlkey=vep0bbo3e1rrh79skpvoqatwu&st=iz0t8kph&dl=0"},
-  { name: "Water Feature",
-    link: "https://dl.dropboxusercontent.com/scl/fi/p70sq16tm8iiuziswtwee/Water_Feature.mp4?rlkey=8sxljbfhjjebacuhpsjujwy26&st=ozvidtyh&dl=0"}
+  { name: "He's", link: "https://dl.dropboxusercontent.com/scl/fi/ufpmfy4llvvtj5nkrkyft/He-s.mp4?rlkey=32uy47gtd9yygy2v89viw9509&st=jsbkzopx&dl=0"},
+  { name: "Leapt", link: "https://dl.dropboxusercontent.com/scl/fi/8b19jwtzl0z8vv3u06hw2/Leapt.mp4?rlkey=vep0bbo3e1rrh79skpvoqatwu&st=iz0t8kph&dl=0"},
+  { name: "Water Feature", link: "https://dl.dropboxusercontent.com/scl/fi/p70sq16tm8iiuziswtwee/Water_Feature.mp4?rlkey=8sxljbfhjjebacuhpsjujwy26&st=ozvidtyh&dl=0"}
 ];
 
 function playVideo(index) {
