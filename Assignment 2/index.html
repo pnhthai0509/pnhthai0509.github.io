@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-light.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="video-wrapper"></section>
+  <div class="video-container">
+    <video src="./Video/Dry Down feat Ben Snaath.mp4" id="video"></video>
+  </div>
+  <section class="track-list-section">
+    <div class="img-container">
+      <img src="./Elements/Untitled-1.png" alt="track-img" class="track-img-large">
+      <h1 id="title" class="track-list-title">Dry Down feat Ben Snaath</h1>
+    </div>
+    <div class="track-list">
+      <h1 id="choose-track">Choose the following track bellow</h1>
+      <div class="track-name-list">
+        <div class="track1 track-list-info">
+          <p class="track-name">Dry Down feat Ben Snaath</p>
+          <p class="track-time">1:00</p>
+        </div>
+        <div class="track2 track-list-info">
+          <p class="track-name">He's</p>
+          <p class="track-time">1:00</p>
+        </div>
+        <div class="track3 track-list-info">
+          <p class="track-name">Leapt</p>
+          <p class="track-time">1:00</p>
+        </div>
+        <div class="track4 track-list-info">
+          <p class="track-name">Water Feature</p>
+          <p class="track-time">1:00</p>
+        </div>
+      </div>
+    </div>
+    <div class="track-list-container"></div>
+  </section>
+  <section class="audio-control-wrapper">
+    <div class="track-info"> 
+      <h1 id="title">Dry Down feat Ben Snaath</h1>
+    </div>
+    <section class="audio-controls">
+      <button id="previous-btn" class="action-btn">
+        <i class="fa-light fa-backward"></i>
+      </button>
+      <button id="play-pause-btn" class="action-btn">
+        <i class="fa-light fa-play play-pause-img"></i>
+      </button>
+      <button id="next-btn" class="action-btn">
+        <i class="fa-light fa-forward"></i>
+      </button>
+      <button id="mute-unmute-btn" class="action-btn">
+        <i class="fa-light fa-volume mute-unmute-img"></i>
+      </button>
+      <div class="progress-bar">
+        <span id="progress-bar-fill"></span>
+      </div>
+
+      <button id="loop-btn" class="action-btn">
+        <i class="fa-light fa-forward"></i>
+      </button>
+      <button id="decrease-volume-btn" class="action-btn">
+        <i class="fa-light fa-forward"></i>
+      </button>
+      <button id="up-btn" class="action-btn">
+        <i class="fa-light fa-caret-up upDownImg"></i>
+      </button>
+    </section>
+  </section>
+</body>
+<script src="script.js"></script>
+</html>
