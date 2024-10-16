@@ -184,3 +184,21 @@ body {
 .project-img {
   width: 100%;
 }
+
+.contact-section{
+
+}
+
+.contact-container{
+
+}
+
+.contact-container p {
+  display: flex;
+  flex-direction: row;
+}
+
+.contact-container a {
+  color: white;
+  text-decoration: none;
+}
