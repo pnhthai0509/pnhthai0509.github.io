@@ -105,6 +105,15 @@ body {
 
 /* Selected work section */
 
+.sel-work-info-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-transform: uppercase;
+  padding: 20px 3em 20px 20px;
+}
+
 .sel-work-container {
   display: flex;
   flex-direction: column;
@@ -114,15 +123,30 @@ body {
   color: white;
   text-decoration: none;
   text-transform: uppercase;
-  padding: 2em;
+  padding: 20px;
+  border-bottom: 1px solid white;
+  font-size: 2vw;
+  font-weight: 400;
 }
 
 .sel-work-container > a:hover {
   color: rgb(184, 184, 184);
 }
 
-.sel-work-container img {
+.sel-work-img {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 300px;
+  height: auto;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.5s;
+  pointer-events: none;
+}
+
+.sel-work-container > a:hover .sel-work-img {
+  opacity: 1;
 }
 
 /* Project page section */
@@ -135,7 +159,7 @@ body {
 .pro-img-container {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
+  flex-direction: column;
   gap: 20px;
 }
 
