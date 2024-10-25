@@ -46,5 +46,4 @@ selWorkImgContainer.addEventListener('mousemove', (e) => {
 });
 
 updateImagePosition(); // Start updating the image position
-
-console.log(updateImagePosition);
+``
