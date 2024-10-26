@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Chivo Mono", monospace;
+  margin: 0;
+  padding: 0;
+}
+*::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  cursor: url("https://freight.cargo.site/t/original/i/591667f1873c9e075d94c049a99631c0e5464975b8fbadcaa5891eda1b2dff5b/Rectangle-1.png"),
+    auto !important;
+}
+
+body {
+  background-color: black;
+}
+
+/* Nav section */
+
+.nav-section {
+  width: 3em;
+  height: 100vh;
+  background-color: white;
+  position: fixed;
+  right: 0;
+  z-index: 10;
+}
+
+.nav-container {
+  padding: 0;
+  margin: 0;
+  float: right;
+}
+
+.nav-container ul {
+  padding: 0;
+  margin: 0;
+}
+
+.list {
+  list-style: none;
+  display: block;
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  padding: 30px 0 30px 0;
+  line-height: 3em;
+  color: black;
+}
+
+.list a {
+  text-decoration: none;
+  color: black;
+  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.project-img-container {
+    height: 100vh;
+    overflow-y: scroll;
+    padding: 10px;
+  }
+  
+  .gallery {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .project-item {
+    position: relative; /* Makes it easier to position text over the image */
+  }
+  
+  .gallery img {
+    width: 20vw;
+    height: 80vh;
+    object-fit: cover;
+    filter: saturate(0);
+    transition: all 200ms ease-in-out;
+  }
+  
+  .gallery img:hover {
+    filter: saturate(1);
+    transform: scale(1.05);
+  }
+  
+  .project-text {
+    color: white;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the text */
+    z-index: 1; /* Ensure the text is on top of the image */
+  }
+  
+  @media (max-width: 900px) {
+    .gallery {
+      flex-direction: column;
+      overflow-x: hidden;
+      align-items: baseline;
+    }
+  
+    .gallery img {
+      width: 90vw;
+      max-height: 40vh;
+    }
+  }
