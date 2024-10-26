@@ -103,11 +103,9 @@ body {
   color: white;
 }
 
-.about-video-container {
-}
-
-.video-container {
-
+.contact-info i {
+  margin-right: 5px;
+  font-size: 0.7em;
 }
 
 #video {

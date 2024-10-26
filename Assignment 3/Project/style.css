@@ -94,6 +94,7 @@ body {
   .gallery img:hover {
     filter: saturate(1);
     transform: scale(1.05);
+    border: 0.5px solid white;
   }
   
   .project-text {
@@ -101,14 +102,14 @@ body {
     position: absolute;
     bottom: 30px;
     left: 10px;
-    display: flex; /* Use flexbox for layout */
-    align-items: center; /* Align items vertically */
+    display: flex;
+    align-items: center;
     z-index: 1;
 
   }
   
   .project-text h1 {
-    margin: 0; /* Remove default margin */
+    margin: 0;
     font-size: 1.7em;
     font-weight: 100;
     text-decoration: none;
@@ -116,8 +117,8 @@ body {
   }
   
   .project-text i {
-    margin-left: 10px; /* Space between text and icon */
-    font-size: 1.7em; /* Icon size */
+    margin-left: 10px;
+    font-size: 1.7em;
   }
 
 
