@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100..900;1,100..900&display=swap");
 
+
 * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -177,7 +178,7 @@ body {
 
 .sel-work-container > a:hover .sel-work-img {
   opacity: 1;
-  transform: scale(1);
+
 }
 
 .sel-work-container > a:hover {

@@ -4,7 +4,7 @@ const gallery = document.querySelector(".gallery");
 galleryContainer.addEventListener("wheel", (event) => {
   event.preventDefault();
 
-  const scrollAmount = event.deltaY * 30;
+  const scrollAmount = event.deltaY * 50;
 
   if (window.innerWidth > 900) {
     gallery.scrollBy({

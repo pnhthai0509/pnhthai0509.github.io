@@ -7,8 +7,8 @@ let currentX = 0;
 let currentY = 0;
 
 function updateImagePosition() {
-  currentX += (targetX - currentX) * 0.1;
-  currentY += (targetY - currentY) * 0.1;
+  currentX += (targetX - currentX);
+  currentY += (targetY - currentY);
 
   selWorkImages.forEach((img) => {
     img.style.transform = `translate(${currentX}px, ${currentY}px)`;
@@ -24,3 +24,4 @@ selWorkImgContainer.addEventListener("mousemove", (e) => {
 });
 
 updateImagePosition();
+
