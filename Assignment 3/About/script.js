@@ -1,6 +1,12 @@
 const video = document.querySelector("#video");
 const videoControl = document.querySelector('.about-section');
 
+// Ensure the video plays automatically and loops if needed
+video.addEventListener('canplay', () => {
+    video.play();
+    video.muted = true; // Optional: Keeps the video muted during autoplay
+    video.loop = true;  // Optional: Loops the video
+});
 
 document.addEventListener('mousemove', (event) => {
     // Get the width of the video
@@ -15,6 +21,6 @@ document.addEventListener('mousemove', (event) => {
     // Calculate the new time for the video based on the mouse position
     const newTime = percentage * video.duration;
 
-    // Set the video's current time
+    // Set the video's current time without pausing playback
     video.currentTime = newTime;
 });
