@@ -79,9 +79,19 @@ body {
     gap: 10px;
 }
 
+.video-container {
+    width: 100vw;
+}
+
+.project-img {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
 .img-large {
     width: 100%;
-    aspect-ratio: 16 / 9; /* Maintain a 16:9 aspect ratio */
+    aspect-ratio: 16 / 9;
 }
 
 .img-small {
@@ -104,6 +114,8 @@ body {
 .credit-details {
     padding-top: 5px;
 }
+
+
 
 
 

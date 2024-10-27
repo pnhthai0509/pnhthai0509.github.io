@@ -58,7 +58,7 @@ body {
     padding: 2em 4em 2em 2em;
     color: white;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: space-evenly;
@@ -80,13 +80,17 @@ body {
     gap: 10px;
 }
 
+.video-container {
+    width: 100%;
+}
+
 .img-large {
     width: 100%;
     aspect-ratio: 16 / 9; /* Maintain a 16:9 aspect ratio */
 }
 
 .img-small {
-    width: 18.75rem;
+    width: 500px;
     aspect-ratio: 16 / 9
 }
 
@@ -103,7 +107,11 @@ body {
 }
 
 .credit-details {
-    padding: 5px;
+    padding-top: 5px;
+}
+
+.credit-details {
+    padding-top: 5px;
 }
 
 

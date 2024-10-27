@@ -86,8 +86,8 @@ body {
 }
 
 .img-small {
-    width: 18.75rem;
-    aspect-ratio: 16 / 9
+    width: 450px;
+    aspect-ratio: 16 / 9;
 }
 
 .img-small img {
