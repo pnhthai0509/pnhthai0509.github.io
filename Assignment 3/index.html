@@ -7,6 +7,16 @@
     <title>PHAN NGUYEN HOANG THAI</title>
   </head>
   <body>
+    <!-- Hi, my name is Phan Nguyen Hoang Thai or Steve and this is my break-down for my assignment 3. -->
+    <!-- Project overview: for this assignment, i will create a portfolio website that will focused on 3 interaction: hover, scroll and mouse movement and each page will showcase a different interaction effects. -->
+
+    <!-- Before this assignment, I had my own website at https://pnht.webflow.io, created using Webflow. At first glance, the site boasts an appealing Swiss design style; however, it lacks my personal touch and interactivity. While Webflow offered a quick and easy solution for building a website, it fell short in terms of flexibility for customization and creating engaging interactions. -->
+
+    <!-- To infuse my personality into the site, I incorporated elements of sarcasm and humor while maintaining a professional tone throughout my work. This blend not only showcases my individuality but also engages visitors and leaves a lasting impression. -->
+
+    <!-- In terms of design choices, I opted to adhere to the Swiss design style, a graphic design movement that is characterized by its emphasis on simplicity, clarity and functionality. This style is not only my personal favorite, but it has also been the foundation of most of my assignment documents. My previous works often incorporated dramatic and hectic visual effects; thus, adopting a minimal design approach will create a contrast that effectively highlights the content.This principle is evident in several inspiring portfolios I discovered, including those of Sarah Bassett (https://www.sarah-bassett.com/), Jinsu Park (https://jinsupark.com/), and Bridget Pictures (https://bridget.pictures/info). Each of these websites shares a common characteristic: a simple layout that significantly enhances the presentation of their work. This simplicity allows the works to speak for themselves, emphasizing clarity and functionality—key tenets of Swiss design. -->
+
+    <!-- This is my main page, where you'll notice the use of various HTML, CSS, and JavaScript files. The reason for this separation is that when I attempted to combine everything into a single file, the elements interfered with each other, causing the website to behave unexpectedly. The same issue occurred with the CSS. I have made every effort to optimize the code and minimize the number of files used while maintaining functionality. -->
     <section class="nav-section">
       <div class="nav-container">
         <ul class="nav">
@@ -27,6 +37,7 @@
                 d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
               />
             </svg>
+            <!-- This icon was taken from: https://fonts.google.com/icons?selected=Material+Symbols+Outlined:menu:FILL@0;wght@400;GRAD@0;opsz@24&icon.size=24&icon.color=%23e8eaed-->
           </li>
         </ul>
         <ul class="nav-sidebar">
@@ -42,6 +53,7 @@
                 d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
               />
             </svg>
+            <!-- This icon was taken from: https://fonts.google.com/icons?selected=Material+Symbols+Outlined:close:FILL@0;wght@400;GRAD@0;opsz@24&icon.size=24&icon.color=%23e8eaed-->
           </li>
           <li class="list-sidebar italic">
             <a href="Assignment 3/index.html">pnht</a>
@@ -55,6 +67,14 @@
         </ul>
       </div>
     </section>
+      <!-- This navigation bar section will feature both desktop and mobile versions. I implemented a straightforward JavaScript function for the hamburger button to ensure it operates effectively in responsive mode. The design of this navbar draws inspiration from vertical icon navbar tutorials, particularly one that emphasizes a simple and minimalistic aesthetic, aligning perfectly with my design preferences. (https://www.youtube.com/watch?v=1uEAt51fEos)
+
+      To enhance the navbar, I decided to incorporate text alongside the icons. I experimented with text rotation, and upon completion, I found that this approach harmonized beautifully with my overall design vision.-->
+
+      <!-- For the landing page, I decided to maintain the minimal design I presented last week. In the selected works section, I aimed to recreate the hover effect seen on this website: https://notabikeshop.eu/.
+
+      I successfully implemented this effect, but I wanted to enhance it further by making a GIF image follow the mouse cursor and smoothly change as users hover over different projects. This addition would create a more dynamic and engaging interaction for visitors.
+      -->
     <section class="hero-wrapper">
       <div class="hero-container">
         <div class="video-container">
@@ -66,6 +86,9 @@
             muted
             loop
           ></video>
+          <!-- For the video, I chose to use the same method from Assignment 2. Instead of uploading the video and image assets to GitHub, which cannot handle large files effectively, I opted to host the assets on a CDN (Content Delivery Network). This allows for faster delivery, as the CDN serves cached content from the nearest server to the user, rather than requiring a longer trip to the website's main server.
+
+          After exploring various CDN services, including Cloudinary and Amazon AWS—which tend to be paid options—I discovered a tutorial demonstrating how to use Dropbox as a CDN for hosting videos at no cost. By modifying the share link format (changing "www.dropbox.com" to "dl.dropboxusercontent.com"), I can effectively utilize Dropbox for this purpose, although it is important to note that Dropbox may not function as a true CDN for all file types and could serve content from a single geographical location.-->
         </div>
         <div class="text-container">
           <h1 class="heading">PHAN NGUYEN HOANG THAI</h1>
@@ -115,10 +138,11 @@
             </div>
             <div class="image">
               <img
-                src="http://upload.wikimedia.org/wikipedia/commons/d/dd/Muybridge_race_horse_animated.gif"
-                alt=""
+                src="https://www.dl.dropboxusercontent.com/scl/fi/jswao8ydyi3u3j9g0veuw/POOR-THOUGHTS.gif?rlkey=xltoq9cieju3wnf39dpef3dpg&st=7vpl4jze&dl=0"
+                alt="Poor Thought Gif"
                 class="sel-work-img"
               />
+              <!-- I applied the same method I used for the video to host the GIF images as well. -->
             </div>
             <div class="Year">
               <p class="sub-heading">2024</p>
@@ -138,8 +162,8 @@
             </div>
             <div class="image">
               <img
-                src="http://upload.wikimedia.org/wikipedia/commons/d/dd/Muybridge_race_horse_animated.gif"
-                alt=""
+                src="https://www.dl.dropboxusercontent.com/scl/fi/eb9mloygj9zluugp1ujrm/DISSOLVING-DIMESSIONS.gif?rlkey=spyqzgg1olhe7w1ek9aio6k8w&st=s6dhwhxm&dl=0"
+                alt="Dissolving Dimension Gif"
                 class="sel-work-img"
               />
             </div>
@@ -163,8 +187,8 @@
             </div>
             <div class="image">
               <img
-                src="http://upload.wikimedia.org/wikipedia/commons/d/dd/Muybridge_race_horse_animated.gif"
-                alt=""
+                src="https://www.dl.dropboxusercontent.com/scl/fi/csv9sf4q6595j8rrdr1xi/MASSGRAPHY.gif?rlkey=ryz17muxycgonevxkg6tz9lz2&st=35sgrnwm&dl=0"
+                alt="Efferescent Gif"
                 class="sel-work-img"
               />
             </div>
@@ -190,8 +214,8 @@
             </div>
             <div class="image">
               <img
-                src="http://upload.wikimedia.org/wikipedia/commons/d/dd/Muybridge_race_horse_animated.gif"
-                alt=""
+                src="https://www.dl.dropboxusercontent.com/scl/fi/gxl0dwou4c1vf6nkr0c86/AA.gif?rlkey=aamrzs3ot1rxcbmydni0w6mmr&st=5qbtvr5g&dl=0"
+                alt="Anybody's Anythings Gif"
                 class="sel-work-img"
               />
             </div>
@@ -200,34 +224,15 @@
             </div>
           </div>
         </a>
-        <!-- <a href="">
-          <div class="sel-work sel-work-info" id="project5">
-            <div class="project">
-              <p class="sub-heading">
-                I was bored during my gap year so I made this “Deserted” house.
-              </p>
-            </div>
-            <div class="category">
-              <p class="sub-heading">3D</p>
-            </div>
-            <div class="duration">
-              <p class="sub-heading">-</p>
-            </div>
-            <div class="image">
-              <img
-                src="http://upload.wikimedia.org/wikipedia/commons/d/dd/Muybridge_race_horse_animated.gif"
-                alt=""
-                class="sel-work-img"
-              />
-            </div>
-            <div class="Year">
-              <p class="sub-heading">2023</p>
-            </div>
-          </div>
-        </a> -->
+
       </div>
     </section>
   </body>
   <script src="script.js"></script>
   <script src="nav.js"></script>
+
+<!-- Reflection:
+I have completed my portfolio website, which is currently hosted at pnht.info. I initially aimed to purchase a .com domain; however, it is listed for $33,750, which exceeds my budget. As a result, I explored alternative options and discovered the .info domain, which I believe is a fitting choice for my portfolio. I chose to retain the name "pnht" because it is short, memorable, and allows me to establish a recognizable identity. My goal is for everyone to know me as "pnht" rather than my lengthy full name.
+While the website is finished, there are still many areas for improvement following this assignment. I plan to enhance the responsive layout and refine the scripting, as some effects currently feel jarring and uncomfortable during interaction. Overall, throughout this course, I have learned and improved significantly in my front-end skills. I am committed to further developing these skills to assist me with more interactive projects after this course.
+Thank you for reading! If you would like more explanations about the coding, I am happy to provide further details. -->
 </html>

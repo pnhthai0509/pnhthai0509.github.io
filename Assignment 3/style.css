@@ -78,6 +78,10 @@ a {
   color: black;
 }
 
+/* To create a rotating text effect for the navigation, I found an article on Stack Overflow that demonstrates how to achieve this using the CSS writing-mode property (https://stackoverflow.com/questions/59024097/vertical-text-in-table-cell-using-css3-writing-mode-in-chrome). I prefer using writing-mode because, unlike transform: rotate(90deg), it recalculates the dimensions of the table cell correctly. This prevents text from overflowing outside the cell in certain scenarios.
+
+By employing writing-mode, I can ensure that the text displays vertically without the layout issues that can arise from using rotation transforms. This method not only enhances compatibility across different browsers but also maintains a clean and organized appearance for the navigation elements. */
+
 .list a {
   text-decoration: none;
   color: black;
@@ -191,6 +195,10 @@ a {
   align-items: center;
   overflow: hidden;
 }
+
+/* The reason I used so much display: flex is that I noticed the website doesn't render properly in Safari, even though it works great in Chrome. It seems that display: flex has inconsistent support across different browsers, particularly older versions of Safari. To ensure compatibility, I need to explore alternative approaches for Safari and other non-Chromium browsers. 
+
+Recent updates indicate that while the gap property for Flexbox is fully supported in the latest versions of Safari (16.4 and beyond), earlier versions may not handle it well. This inconsistency necessitates a fallback or different layout strategy to achieve the desired visual outcome across all browsers. */
 
 .sel-work-title {
   width: 90%;

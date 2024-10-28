@@ -149,8 +149,13 @@ a {
   height: 50vh;
 }
 
-.about-info, .contact-info {
-  width: 50%;
+.about-info {
+  width: 60%;
+  height: 50vh;
+  padding: 1em;
+}
+.contact-info {
+  width: 40%;
   height: 50vh;
   padding: 1em;
 }
