@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100..900;1,100..900&display=swap");
 
-
 * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -20,30 +19,52 @@ html {
 }
 
 body {
+  color: white;
   background-color: black;
-  overflow: hidden;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.title {
+  font-size: 4em;
+  font-weight: 900;
+}
+
+.heading {
+  font-size: 2em;
+  font-weight: 600;
+}
+
+.sub-heading {
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
+.italic {
+  font-style: italic;
 }
 
 /* Nav section */
 
 .nav-section {
-  width: 3em;
-  height: 100%;
-  background-color: white;
-  position: fixed;
-  right: 0;
-  z-index: 10;
 }
 
 .nav-container {
+}
+
+.nav {
+  background-color: white;
+  position: fixed;
+  right: 0;
+  z-index: 99;
+  width: 3em;
+  height: 100vh;
   padding: 0;
   margin: 0;
   float: right;
-}
-
-.nav-container ul {
-  padding: 0;
-  margin: 0;
 }
 
 .list {
@@ -60,28 +81,64 @@ body {
 .list a {
   text-decoration: none;
   color: black;
-  margin: 0 auto;
-  margin-left: auto;
-  margin-right: auto;
   text-align: center;
 }
 
-.heading {
-  font-size: 2em;
-  font-weight: 400;
+.list .btn {
+  display: none;
 }
 
-.sub-heading {
-  font-size: 1.5em;
-  font-weight: 300;
-  text-transform: uppercase;
+.nav-sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: none;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(5px);
+  z-index: 99;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.list-sidebar {
+  width: 100%;
+  text-decoration: none;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  font-size: 2em;
+  font-weight: 400;
+  padding: 1em;
+  list-style-type: none;
+}
+
+.list-sidebar a {
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Reponsive for the nav */
+
+@media (max-width: 900px) {
+  .nav {
+    background-color: transparent;
+  }
+  .list {
+    display: none;
+  }
+  .btn {
+    display: block;
+    color: white;
+  }
 }
 
 .about-section {
   width: 100vw;
   height: 100vh;
   color: white;
-  font-size: 2rem;
 }
 
 .about-info-container {
@@ -98,19 +155,22 @@ body {
   padding: 1em;
 }
 
-.contact-info a {
-  text-decoration: none;
-  color: white;
-}
-
 .contact-info i {
   margin-right: 5px;
   font-size: 0.7em;
 }
 
+.about-video-container {
+
+}
+
+.video-container {
+
+}
+
 #video {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   position: fixed;
   left: 0;
@@ -118,9 +178,5 @@ body {
   top: 0;
   bottom: 0;
   z-index: -1;
-  filter: brightness(90%);
-}
-
-.text {
-  color: white;
+  filter: brightness(70%);
 }

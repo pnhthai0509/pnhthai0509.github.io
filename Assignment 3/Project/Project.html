@@ -17,19 +17,56 @@
   <body>
     <section class="nav-section">
       <div class="nav-container">
-        <ul>
-          <li class="list"><a href="/index.html">pnht</a></li>
+        <ul class="nav">
+          <li class="list"><a href="./index.html">pnht</a></li>
           <li class="list">
-            <a href="/Project/Project.html">Projects</a>
+            <a href="./Project/Project.html">Projects</a>
           </li>
-          <li class="list"><a href="/About/About.html">About + Contact</a></li>
+          <li class="list"><a href="./About/About.html">About + Contact</a></li>
+          <li class="list btn" onclick="showSidebar()">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="2rem"
+              fill="white"
+            >
+              <path
+                d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+              />
+            </svg>
+          </li>
+        </ul>
+        <ul class="nav-sidebar">
+          <li class="list-sidebar" onclick="hideSidebar()">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="2rem"
+              fill="white"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              />
+            </svg>
+          </li>
+          <li class="list-sidebar italic">
+            <a href="Assignment 3/index.html">pnht</a>
+          </li>
+          <li class="list-sidebar">
+            <a href="Assignment 3/Project/Project.html">Projects</a>
+          </li>
+          <li class="list-sidebar">
+            <a href="Assignment 3/About/About.html">About + Contact</a>
+          </li>
         </ul>
       </div>
     </section>
     <section class="project-img-wrapper">
       <div class="project-img-container">
         <div class="gallery">
-          <a href="/Project/Project-1/Project-1.html">
+          <a href="Project-1.html">
             <div class="project-item">
               <img src="https://res.cloudinary.com/dcs3bc5qp/image/upload/v1730033781/Poor-Thoughts_avlbru.jpg" alt="" />
               <div class="project-text">
@@ -38,7 +75,7 @@
               </div>
             </div>
           </a>
-          <a href="/Project/Project-2/Project-2.html">
+          <a href="Project-2.html">
             <div class="project-item">
               <img
                 src="https://res.cloudinary.com/dcs3bc5qp/image/upload/v1730033784/Dissolving-Dimension_x2n3dx.jpg"
@@ -50,7 +87,7 @@
               </div>
             </div>
           </a>
-          <a href="/Project/Project-3/Project-3.html">
+          <a href="Project-3.html">
             <div class="project-item">
               <img
                 src="https://res.cloudinary.com/dcs3bc5qp/image/upload/v1730033789/Efferescent_wjn0sq.jpg"
@@ -62,7 +99,7 @@
               </div>
             </div>
           </a>
-          <a href="/Project/Project-4/Project-4.html">
+          <a href="Project-4.html">
           <div class="project-item">
             <img
               src="https://res.cloudinary.com/dcs3bc5qp/image/upload/v1730033790/Anybody-Anything_cikcie.jpg"
@@ -74,7 +111,7 @@
             </div>
           </div>
         </a>
-          <!-- <a href="/Project/Project-5/Project-5.html">
+          <!-- <a href="/Assignment 3/Project/Project-5/Project-5.html">
             <div class="project-item">
               <img
                 src="/Elements/Deserted.jpg"
@@ -86,7 +123,7 @@
               </div>
             </div>
           </a> -->
-          <!-- <a href="/Project/Project-6/Project-6.html">
+          <!-- <a href="/Assignment 3/Project/Project-6/Project-6.html">
             <div class="project-item">
               <img
                 src="/Elements/Ilford HP5 400  - MHD603012.jpg"
@@ -98,7 +135,7 @@
               </div>
             </div>
           </a> -->
-          <a href="/Project/Project-7/Project-7.html">
+          <a href="Project-7.html">
             <div class="project-item">
               <img
                 src="https://res.cloudinary.com/dcs3bc5qp/image/upload/v1730033795/Streamer_annroq.jpg"
@@ -110,7 +147,7 @@
               </div>
             </div>
           </a>
-          <!-- <a href="/Project/Project-8/Project-8.html">
+          <!-- <a href="/Assignment 3/Project/Project-8/Project-8.html">
             <div class="project-item">
               <img
                 src="/Elements/Ilford HP5 400  - MHD603012.jpg"
@@ -126,5 +163,6 @@
       </div>
     </section>
   </body>
-  <script src="./script.js"></script>
+  <script src="script.js"></script>
+  <script src="/Assignment 3/nav.js"></script>
 </html>

@@ -4,17 +4,54 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>PHAN NGUYEN HOANG THAI</title>
   </head>
   <body>
     <section class="nav-section">
       <div class="nav-container">
-        <ul>
-          <li class="list"><a href="/index.html">pnht</a></li>
+        <ul class="nav">
+          <li class="list"><a href="./index.html">pnht</a></li>
           <li class="list">
-            <a href="/Project/Project.html">Projects</a>
+            <a href="./Project/Project.html">Projects</a>
           </li>
-          <li class="list"><a href="/About/About.html">About + Contact</a></li>
+          <li class="list"><a href="./About/About.html">About + Contact</a></li>
+          <li class="list btn" onclick="showSidebar()">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="2rem"
+              fill="white"
+            >
+              <path
+                d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+              />
+            </svg>
+          </li>
+        </ul>
+        <ul class="nav-sidebar">
+          <li class="list-sidebar" onclick="hideSidebar()">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="2rem"
+              fill="white"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              />
+            </svg>
+          </li>
+          <li class="list-sidebar italic">
+            <a href="Assignment 3/index.html">pnht</a>
+          </li>
+          <li class="list-sidebar">
+            <a href="Assignment 3/Project/Project.html">Projects</a>
+          </li>
+          <li class="list-sidebar">
+            <a href="Assignment 3/About/About.html">About + Contact</a>
+          </li>
         </ul>
       </div>
     </section>
@@ -32,142 +69,165 @@
         </div>
         <div class="text-container">
           <h1 class="heading">PHAN NGUYEN HOANG THAI</h1>
-          <h2 class="sub-heading">
+          <br />
+          <span class="sub-heading">
             VFX Artist - Cinematographer - Video Editor
-          </h2>
+          </span>
         </div>
       </div>
     </section>
-    <!-- <section class="sel-work-wrapper">
-      <h1>Selected Works</h1>
+    <section class="sel-work-wrapper">
+      <div class="sel-work-title">
+        <h1 class="heading">Selected Works</h1>
+        <br />
+        <p class="sub-heading">These are some of my favorite works (sort of)</p>
+      </div>
+      <br />
+      <br />
       <div class="sel-work-container">
         <div class="sel-work">
           <div class="project" id="title">
-            <p>Project</p>
+            <p class="heading">Project</p>
           </div>
-          <div class="catergory">
-            <p>Catergory</p>
+          <div class="category">
+            <p class="heading">Category</p>
           </div>
           <div class="duration">
-            <p>Duration</p>
+            <p class="heading">Duration</p>
           </div>
+          <div class="image"></div>
           <div class="Year">
-            <p>Year</p>
+            <p class="heading">Year</p>
           </div>
         </div>
         <a href="">
           <div class="sel-work sel-work-info" id="project1">
             <div class="project">
-              <p>How did we transfer our “Poor Thoughts” into 3:53 video.</p>
+              <p class="sub-heading">
+                How did we transfer our “Poor Thoughts” into 3:53 video.
+              </p>
             </div>
-            <div class="catergory">
-              <p>Short Film</p>
+            <div class="category">
+              <p class="sub-heading">Short Film</p>
             </div>
             <div class="duration">
-              <p>3:53</p>
+              <p class="sub-heading">3:53</p>
+            </div>
+            <div class="image">
+              <img
+                src="http://upload.wikimedia.org/wikipedia/commons/d/dd/Muybridge_race_horse_animated.gif"
+                alt=""
+                class="sel-work-img"
+              />
             </div>
             <div class="Year">
-              <p>2024</p>
+              <p class="sub-heading">2024</p>
             </div>
           </div>
-          <img
-            src="http://upload.wikimedia.org/wikipedia/commons/d/dd/Muybridge_race_horse_animated.gif"
-            alt=""
-            class="sel-work-img"
-          />
         </a>
         <a href="">
           <div class="sel-work sel-work-info" id="project2">
             <div class="project">
-              <p>Disolving Dimension</p>
+              <p class="sub-heading">Disolving Dimension</p>
             </div>
-            <div class="catergory">
-              <p>Video</p>
+            <div class="category">
+              <p class="sub-heading">Video</p>
             </div>
             <div class="duration">
-              <p>14:13</p>
+              <p class="sub-heading">14:13</p>
+            </div>
+            <div class="image">
+              <img
+                src="http://upload.wikimedia.org/wikipedia/commons/d/dd/Muybridge_race_horse_animated.gif"
+                alt=""
+                class="sel-work-img"
+              />
             </div>
             <div class="Year">
-              <p>2024</p>
+              <p class="sub-heading">2024</p>
             </div>
           </div>
-          <img
-            src="http://upload.wikimedia.org/wikipedia/commons/d/dd/Muybridge_race_horse_animated.gif"
-            alt=""
-            class="sel-work-img"
-          />
         </a>
         <a href="">
           <div class="sel-work sel-work-info" id="project3">
             <div class="project">
-              <p>I performed a blood ritual in honor of “Efferesscent”.</p>
+              <p class="sub-heading">
+                I performed a blood ritual in honor of “Efferesscent”.
+              </p>
             </div>
-            <div class="catergory">
-              <p>Photography/Video</p>
+            <div class="category">
+              <p class="sub-heading">Photography/Video</p>
             </div>
             <div class="duration">
-              <p>1:03</p>
+              <p class="sub-heading">1:03</p>
+            </div>
+            <div class="image">
+              <img
+                src="http://upload.wikimedia.org/wikipedia/commons/d/dd/Muybridge_race_horse_animated.gif"
+                alt=""
+                class="sel-work-img"
+              />
             </div>
             <div class="Year">
-              <p>2023-2024</p>
+              <p class="sub-heading">2023-2024</p>
             </div>
           </div>
-          <img
-            src="http://upload.wikimedia.org/wikipedia/commons/d/dd/Muybridge_race_horse_animated.gif"
-            alt=""
-            class="sel-work-img"
-          />
         </a>
         <a href="">
           <div class="sel-work sel-work-info" id="project4">
             <div class="project">
-              <p>
+              <p class="sub-heading">
                 Our 'Anybody Anything - The Video' is like 'Fallen Angels' if it
                 were filmed on a potato. It's a masterpiece of low-budget
                 ingenuity.
               </p>
             </div>
-            <div class="catergory">
-              <p>Video</p>
+            <div class="category">
+              <p class="sub-heading">Video</p>
             </div>
             <div class="duration">
-              <p>3:53</p>
+              <p class="sub-heading">3:53</p>
+            </div>
+            <div class="image">
+              <img
+                src="http://upload.wikimedia.org/wikipedia/commons/d/dd/Muybridge_race_horse_animated.gif"
+                alt=""
+                class="sel-work-img"
+              />
             </div>
             <div class="Year">
-              <p>2023</p>
+              <p class="sub-heading">2023</p>
             </div>
           </div>
-          <img
-            src="http://upload.wikimedia.org/wikipedia/commons/d/dd/Muybridge_race_horse_animated.gif"
-            alt=""
-            class="sel-work-img"
-          />
         </a>
-        <a href="">
+        <!-- <a href="">
           <div class="sel-work sel-work-info" id="project5">
             <div class="project">
-              <p>
+              <p class="sub-heading">
                 I was bored during my gap year so I made this “Deserted” house.
               </p>
             </div>
-            <div class="catergory">
-              <p>3D</p>
+            <div class="category">
+              <p class="sub-heading">3D</p>
             </div>
             <div class="duration">
-              <p>-</p>
+              <p class="sub-heading">-</p>
+            </div>
+            <div class="image">
+              <img
+                src="http://upload.wikimedia.org/wikipedia/commons/d/dd/Muybridge_race_horse_animated.gif"
+                alt=""
+                class="sel-work-img"
+              />
             </div>
             <div class="Year">
-              <p>2023</p>
+              <p class="sub-heading">2023</p>
             </div>
           </div>
-          <img
-            src="http://upload.wikimedia.org/wikipedia/commons/d/dd/Muybridge_race_horse_animated.gif"
-            alt=""
-            class="sel-work-img"
-          />
-        </a>
+        </a> -->
       </div>
-    </section> -->
+    </section>
   </body>
-  <script src="/script.js"></script>
+  <script src="script.js"></script>
+  <script src="nav.js"></script>
 </html>

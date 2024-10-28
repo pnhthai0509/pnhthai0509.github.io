@@ -4,17 +4,54 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project 1</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style.css"/>
   </head>
   <body>
     <section class="nav-section">
       <div class="nav-container">
-        <ul>
-          <li class="list"><a href="/index.html">pnht</a></li>
+        <ul class="nav">
+          <li class="list"><a href="./index.html">pnht</a></li>
           <li class="list">
-            <a href="/Project/Project.html">Projects</a>
+            <a href="./Project/Project.html">Projects</a>
           </li>
-          <li class="list"><a href="/About/About.html">About + Contact</a></li>
+          <li class="list"><a href="./About/About.html">About + Contact</a></li>
+          <li class="list btn" onclick="showSidebar()">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="2rem"
+              fill="white"
+            >
+              <path
+                d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+              />
+            </svg>
+          </li>
+        </ul>
+        <ul class="nav-sidebar">
+          <li class="list-sidebar" onclick="hideSidebar()">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="2rem"
+              fill="white"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              />
+            </svg>
+          </li>
+          <li class="list-sidebar italic">
+            <a href="Assignment 3/index.html">pnht</a>
+          </li>
+          <li class="list-sidebar">
+            <a href="Assignment 3/Project/Project.html">Projects</a>
+          </li>
+          <li class="list-sidebar">
+            <a href="Assignment 3/About/About.html">About + Contact</a>
+          </li>
         </ul>
       </div>
     </section>
@@ -202,4 +239,5 @@
     </div>
   </body>
   <script src="https://player.vimeo.com/api/player.js"></script>
+  <script src="/Assignment 3/nav.js"></script>
 </html>
